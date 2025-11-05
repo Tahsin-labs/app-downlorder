@@ -10,11 +10,9 @@ const AppError = () => {
     return (
         <div className="bg-gray-50 min-h-screen flex items-center justify-center p-4">
             <div class=" max-w-4xl w-full  p-8 text-center">
-
-                {/* <div class="mb-8">
-             <img src={''} alt="404 Illustration" class="mx-auto max-w-full h-auto">
-         </div>  */}
-
+                <div className='mb-8'>
+                    <img className='mx-auto max-w-full h-auto' src={'https://i.ibb.co.com/7tXP2kxy/App-Error.png'} alt="" />
+                </div>
 
                 <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Oops, app........ not found!</h1>
 

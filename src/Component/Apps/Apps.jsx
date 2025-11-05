@@ -60,7 +60,7 @@ const Apps = () => {
                             <input value={search} onChange={(e) => setSearch(e.target.value)} type="search" placeholder="Search Apps" class="w-full px-4 py-2 rounded-lg border border-gray-300 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" />
 
 
-                        
+
                         </div>
                     </div>
                 </div>
@@ -75,11 +75,28 @@ const Apps = () => {
                             <Allapk key={singleapk.id} singleapk={singleapk} />
                         ))}
                     </div>
-                        ) : (
+                ) : (
                     <div>
-                        <h2 className="text-xl font-semibold text-gray-700 mb-2">No App Found</h2>
+                        <div className="bg-gray-50 min-h-screen flex items-center justify-center p-4">
+                            <div class=" max-w-4xl w-full  p-8 text-center">
+                                <div className='mb-8'>
+                                    <img className='mx-auto max-w-full h-auto' src={'https://i.ibb.co.com/27rptrgg/7104553-search-no-result-not-found-concept-illustration-flat-design-vector-eps10-modern-graphic-elem.jpg'} alt="" />
+                                </div>
+
+                                <h1 class="text-4xl md:text-5xl font-bold text-gray-800 mb-2">Oops, The app doesnt exixt !</h1>
+
+
+                                <p class="text-gray-600 mb-6">Sraech anything else</p>
+
+
+                                <a href="#" class="inline-block px-6 py-3 bg-purple-600 hover:bg-purple-700 text-white font-medium rounded-md transition-colors duration-300">
+                                    Go Back!
+                                </a>
+                            </div>
+
+                        </div>
                     </div>
-                     )}
+                )}
             </div>
 
         </div>

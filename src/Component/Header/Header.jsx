@@ -18,19 +18,17 @@ const Header = () => {
                     </div>
 
                     <nav class="hidden md:flex space-x-6">
-                        {/* <a href="#" class="text-purple-600 font-medium hover:text-purple-800 transition">Home</a>
-                        <a href="#" class="text-gray-600 font-medium hover:text-gray-800 transition">Apps</a>
-                        <a href="#" class="text-gray-600 font-medium hover:text-gray-800 transition">Installation</a> */}
 
-                        <NavLink to="/">Home</NavLink>
-                        <NavLink to="/apps">Apps</NavLink>
-                        <NavLink to="Installation">Installation</NavLink>
+
+                        <NavLink className='flex gap-2' to="/"><img src={'https://i.ibb.co.com/zh6XJnC5/home-icon-house-icon-illustration-perfect-for-all-project-vector.jpg'} alt="" class="w-7 h-7" /><span>Home</span></NavLink>
+                        <NavLink className='flex gap-2' to="/apps"><img src={'https://i.ibb.co.com/FkgQTxSH/images-2.png'} alt="" class="w-7 h-7" /><span>Apps</span></NavLink>
+                        <NavLink className='flex gap-2' to="Installation"><img src={'https://i.ibb.co.com/hR8k4PRx/download-icon-vector-illustration-install-symbol-654297-207.jpg'} alt="" class="w-9 h-7" /><span>Installation</span></NavLink>
                     </nav>
 
                     <button class="bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-2 rounded-lg font-medium  hover:from-purple-600 hover:to-blue-700 transition">
-                        <a className=' justify-center' href="https://play.google.com/store/games?hl=en">
-                        
-                            <img src={'https://i.ibb.co.com/Qv5db6L6/Vector.png'} alt="" className='' />
+                        <a className='flex gap-2' href="https://play.google.com/store/games?hl=en">
+
+                            <img src={'https://i.ibb.co.com/Qv5db6L6/Vector.png'} alt="" className='items-center' />
                             <span>Contribute</span>
                         </a>
 

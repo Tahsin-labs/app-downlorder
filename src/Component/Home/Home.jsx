@@ -26,16 +26,15 @@ const Home = () => {
 
                     <div class="flex flex-col sm:flex-row justify-center gap-4 mb-8">
                         <button class="bg-white border border-gray-300 rounded-lg px-6 py-3 flex items-center justify-center hover:bg-gray-50 transition">
-                            <a href="https://play.google.com/store/games?hl=en">
-                                {/* <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                               alt="Play Store" class="h-6"> */}
+                            <a className='flex gap-2.5' href="https://play.google.com/store/games?hl=en">
+
+                                <img src={'https://i.ibb.co.com/ycKsP2gT/fi-16076057.png'} alt="" />
                                 <span>Play store</span>
                             </a>
                         </button>
                         <button class="bg-white border border-gray-300 rounded-lg px-6 py-3 flex items-center justify-center hover:bg-gray-50 transition">
-                            <a href="https://www.apple.com/app-store/">
-                                {/* <img src="https://upload.wikimedia.org/wikipedia/commons/7/78/Google_Play_Store_badge_EN.svg" 
-                               alt="Play Store" class="h-6"> */}
+                            <a className='flex gap-2.5' href="https://www.apple.com/app-store/" >
+                                <img src={'https://i.ibb.co.com/8gmQyfNy/Group.png'} alt="" className='items-center' />
                                 <span>App store</span>
                             </a>
                         </button>
@@ -44,7 +43,7 @@ const Home = () => {
                     <div class="relative max-w-4xl mx-auto">
                         {/* <img src="https://placehold.co/400x700/1f2937/ffffff?text=App+Screenshot" alt="Mobile App" class="mx-auto rounded-3xl shadow-2xl relative z-10"> */}
 
-                       <img src={'https://i.ibb.co.com/wFZJcY1D/hero.png'} alt="" />
+                        <img src={'https://i.ibb.co.com/wFZJcY1D/hero.png'} alt="" />
 
                     </div>
                 </div>
