@@ -9,19 +9,19 @@ const AppDetails = () => {
     //   the useLoderData is for loding data from fatch data....
     const data = useLoaderData()
     const singleData = data.find(detailapk => detailapk.id == id);
-    const { title, downloads, ratingAvg, reviews, ratings,image } = singleData;
+    const { title, downloads, ratingAvg, reviews, ratings, image } = singleData;
 
 
     // console.log(ratings);
 
 
-const handleInstall = id =>{
+    const handleInstall = id => {
 
 
 
-addToStoreDB(id)
+        addToStoreDB(id)
 
-}
+    }
 
 
 
@@ -34,7 +34,7 @@ addToStoreDB(id)
                 <div class="flex flex-col md:flex-row gap-8 items-start mb-8 border-b pb-8">
 
                     <div class="w-32 h-32 bg-white rounded-lg shadow-md flex items-center justify-center">
-                           <img src={image} alt="" />
+                        <img src={image} alt="" />
                     </div>
 
                     <div class="flex-1">
@@ -46,8 +46,8 @@ addToStoreDB(id)
                             <div class="flex items-center gap-2">
                                 <i class="fas fa-download text-green-600 text-xl"></i>
                                 <div>
-                                    <div class="text-xs text-gray-500">Downloads</div>
-                                    <div class="text-2xl font-bold">{downloads}</div>
+                                    <div class="text-xs text-gray-500"> Downloads</div>
+                                    <div class="text-2xl font-bold flex gap-2 "> <img src={'https://i.ibb.co.com/3YdrfN8k/fi-18110198.png'} alt="" className='w-6 h-6 mt-1' /> <span>{downloads}</span></div>
                                 </div>
                             </div>
 
@@ -55,7 +55,7 @@ addToStoreDB(id)
                                 <i class="fas fa-star text-yellow-500 text-xl"></i>
                                 <div>
                                     <div class="text-xs text-gray-500">Average Ratings</div>
-                                    <div class="text-2xl font-bold">{ratingAvg}</div>
+                                    <div class="text-2xl font-bold flex gap-2 "> <img src={'https://i.ibb.co.com/sv4h3zmJ/icon-ratings.png'} alt="" className='w-6 h-6 mt-1' /> <span>{ratingAvg}</span></div>
                                 </div>
                             </div>
 
@@ -63,7 +63,7 @@ addToStoreDB(id)
                                 <i class="fas fa-comment-dots text-purple-600 text-xl"></i>
                                 <div>
                                     <div class="text-xs text-gray-500">Total Reviews</div>
-                                    <div class="text-2xl font-bold">{reviews}</div>
+                                    <div class="text-2xl font-bold flex gap-1 "> <img src={'https://i.ibb.co.com/HDVPLwKC/icon-review.png'} alt="" className='w-7 h-7 mt-1' /> <span>   {reviews}</span></div>
                                 </div>
                             </div>
                         </div>
@@ -71,12 +71,12 @@ addToStoreDB(id)
 
 
 
-                       
 
-                            <button onClick={()=> handleInstall(id)} class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
-                                Install Now (291 MB)
-                            </button>
-                           
+
+                        <button onClick={() => handleInstall(id)} class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                            Install Now (291 MB)
+                        </button>
+
 
 
 
