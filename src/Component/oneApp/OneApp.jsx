@@ -1,8 +1,14 @@
-import React from 'react';
+// import React, { useState } from 'react';
+
+
 
 
 
 const OneApp = ({ install, singleapk, setInstall }) => {
+
+
+
+
 
 
 
@@ -13,6 +19,8 @@ const OneApp = ({ install, singleapk, setInstall }) => {
         let filterList = install.filter(p => p.id != id)
         setInstall(filterList)
         localStorage.setItem("installList", JSON.stringify(updateList))
+        alert("Uninstall Successfully")
+
 
     }
 
@@ -39,6 +47,7 @@ const OneApp = ({ install, singleapk, setInstall }) => {
                             </div>
                         </div>
                     </div>
+
                     <button onClick={() => handleRemove(singleapk.id)} class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded transition-colors duration-200">
                         Uninstall
                     </button>
@@ -46,6 +55,7 @@ const OneApp = ({ install, singleapk, setInstall }) => {
 
 
             </div>
+            
         </div>
     );
 };

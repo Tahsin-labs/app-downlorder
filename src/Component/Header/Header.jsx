@@ -54,8 +54,8 @@ const Header = () => {
                             <ul
                                 tabIndex="-1"
                                 className="menu menu-sm dropdown-content bg-base-100 rounded-box z-1 mt-3 w-52 p-2 shadow">
-                                <li> <NavLink className='flex gap-2' to="/"><img src={'https://i.ibb.co.com/zh6XJnC5/home-icon-house-icon-illustration-perfect-for-all-project-vector.jpg'} alt="" class="w-7 h-7" /><span>Home</span></NavLink></li>  
-                                <li> <NavLink className='flex gap-2' to="/apps"><img src={'https://i.ibb.co.com/FkgQTxSH/images-2.png'} alt="" class="w-7 h-7" /><span>Apps</span></NavLink></li>                               
+                                <li> <NavLink className='flex gap-2' to="/"><img src={'https://i.ibb.co.com/zh6XJnC5/home-icon-house-icon-illustration-perfect-for-all-project-vector.jpg'} alt="" class="w-7 h-7" /><span>Home</span></NavLink></li>
+                                <li> <NavLink className='flex gap-2' to="/apps"><img src={'https://i.ibb.co.com/FkgQTxSH/images-2.png'} alt="" class="w-7 h-7" /><span>Apps</span></NavLink></li>
                                 <li>  <NavLink className='flex gap-0' to="Installation"><img src={'https://i.ibb.co.com/hR8k4PRx/download-icon-vector-illustration-install-symbol-654297-207.jpg'} alt="" class="w-9 h-6" /><span>Installation</span></NavLink></li>
                             </ul>
                         </div>
@@ -74,14 +74,14 @@ const Header = () => {
                         </ul>
                     </div>
                     <div className="navbar-end">
-                          <button class=" bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-2 rounded-lg font-medium  hover:from-purple-600 hover:to-blue-700 transition">
-                        <a className='flex gap-2' href="https://play.google.com/store/games?hl=en">
+                        <button class=" bg-gradient-to-r from-purple-500 to-blue-600 text-white px-4 py-2 rounded-lg font-medium  hover:from-purple-600 hover:to-blue-700 transition">
+                            <a className='flex gap-2' href="https://github.com/Tahsin-labs?tab=repositories">
 
-                            <img src={'https://i.ibb.co.com/Qv5db6L6/Vector.png'} alt="" className='items-center' />
-                            <span>Contribute</span>
-                        </a>
+                                <img src={'https://i.ibb.co.com/Qv5db6L6/Vector.png'} alt="" className='items-center' />
+                                <span>Contribute</span>
+                            </a>
 
-                    </button>
+                        </button>
                     </div>
                 </div>
             </div>

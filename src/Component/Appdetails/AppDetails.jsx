@@ -1,8 +1,13 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { Link, useLoaderData, useParams } from 'react-router';
 import { Bar, BarChart, XAxis, YAxis } from 'recharts';
 import { addToStoreDB } from '../alljs/all';
+import { ToastContainer, toast } from 'react-toastify';
+
 const AppDetails = () => {
+
+
+    const [selected, setSelected] = useState(false)
 
     const { id } = useParams()
     // console.log(id)
@@ -16,10 +21,10 @@ const AppDetails = () => {
 
 
     const handleInstall = id => {
-
-
-
+        setSelected(true)
         addToStoreDB(id)
+        toast('Thanks to Install');
+
 
     }
 
@@ -73,8 +78,8 @@ const AppDetails = () => {
 
 
 
-                        <button onClick={() => handleInstall(id)} class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
-                            Install Now (291 MB)
+                        <button disabled={false} onClick={() => handleInstall(id)} class="bg-green-500 hover:bg-green-600 text-white font-medium py-2 px-4 rounded-lg transition-colors duration-300">
+                            {selected === true ? "Installed" : "Install now (291 MB)"}
                         </button>
 
 
@@ -110,10 +115,13 @@ const AppDetails = () => {
                         <p class="mb-4">A unique feature of this app is the integration of task lists with timers. You can assign each task to a specific Pomodoro session, making your schedule more structured. The built-in analytics show not only how much time you've worked but also which tasks consumed the most energy. This allows you to reflect on your efficiency and adjust your workflow accordingly. The app also includes optional background sounds such as white noise, nature sounds, or instrumental music to create a distraction-free atmosphere.</p>
 
                         <p class="mb-0">For people who struggle with procrastination, the app provides motivational streaks and achievements. Completing multiple Pomodoro sessions unlocks milestones, giving a sense of accomplishment. This gamified approach makes focusing more engaging and less like a chore. Whether you're studying for exams, coding, writing, or handling office work, the app adapts to your routine. By combining focus tracking, task management, and motivational tools, this Pomodoro app ensures that you not only work harder but also smarter. It is a personal trainer for your brain, keeping you disciplined, refreshed, and productive throughout the day.</p>
+                         <ToastContainer />
                     </div>
+                    
                 </div>
             </div>
         </div>
+
     );
 };
 

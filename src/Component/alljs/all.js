@@ -1,3 +1,4 @@
+import { ToastContainer, toast } from 'react-toastify';
 const getStoreapk = () => {
 
     const storeAppsSTR = localStorage.getItem("installList")
@@ -20,7 +21,7 @@ const addToStoreDB = (id) => {
     const storeAppData = getStoreapk();
 
     if (storeAppData.includes(id)) {
-        alert("id already exist")
+        toast("id already exist")
     }
     else {
 
@@ -32,4 +33,4 @@ const addToStoreDB = (id) => {
 }
 
 
-export { addToStoreDB,getStoreapk }
+export { addToStoreDB, getStoreapk }
